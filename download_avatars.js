@@ -3,7 +3,6 @@ const authorization = require('./secrets');
 const fs = require('fs');
 
 const userInput = process.argv.slice(2);
-console.log(userInput);
 
 console.log('Welcome to the GitHub Avatar Downloader!');
 
@@ -17,7 +16,6 @@ if (userInput[0] && userInput[1]) {
       }
     };
     console.log('Downloading file...');
-    console.log(options.url);
 
     request(options, function(err, res, body) {
       let obj = JSON.parse(body);
@@ -44,6 +42,6 @@ if (userInput[0] && userInput[1]) {
 
 
 } else {
-  console.log('Error: Please input a repo and then the owner!');
+  console.log('Error: Please input both a repo name and the owner!');
 }
 
