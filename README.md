@@ -10,5 +10,5 @@ This program should be executed from the command line, in the following manner:
 
 `node download_avatars.js jquery jquery`
 
-First parameter after filename: repository name
+First parameter after filename: repository name<br/>
 Second parameter after filename: repository owner
