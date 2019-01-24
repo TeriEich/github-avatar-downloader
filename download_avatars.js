@@ -42,6 +42,6 @@ getRepoContributors(userInput[1], userInput[0], function(err, result) {
     let fileName = result[url].login;
     downloadImageByURL(avatarURL, `./avatars/${fileName}.jpg`);
   }
-  console.log("Errors: ", err);
+  console.log('Errors: ', err);
   console.log('Download complete.');
 });
